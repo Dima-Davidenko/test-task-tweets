@@ -1,0 +1,40 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container::before {
+  content: '';
+  display: block;
+  width: 380px;
+  height: 8px;
+  background-image: url('../../assets/rectangle.png');
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+}
+.wrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-image: url('../../assets/ellipse.png');
+}
+.avatar {
+  display: block;
+  width: 65px;
+  height: 65px;
+  border-radius: 86px;
+}
